@@ -29,23 +29,23 @@ class CartScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Cart items
-            SizedBox(height: defaultSize * 2),
+            const SizedBox(height: 20),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: List<Widget>.generate(coursesList.length,
                   (index) => CartCard(course: coursesList[index])),
             ),
 
-            Divider(color: kBlack50, height: defaultSize * .2),
+            Divider(color: kBlack50, height: 2),
 
             // Wishlist items
-            SizedBox(height: defaultSize * 2),
+            const SizedBox(height: 20),
             TextExtraLarge(
               title: "Wishlist",
               color: kBlack80,
               weight: FontWeight.w500,
             ),
-            SizedBox(height: defaultSize * 4),
+            const SizedBox(height: 40),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: List<Widget>.generate(
